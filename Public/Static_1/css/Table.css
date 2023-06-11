@@ -1,0 +1,166 @@
+.title_table{
+    width: 100%;
+}
+
+table{
+    border-radius: 1rem 1rem 0 0;
+    padding: 0.2rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+
+thead{
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+tbody{
+    display: inline-block;
+    width: 100%;   
+    overflow:auto;
+    max-height: 68vh;
+
+}
+
+tr {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 3rem;
+    line-height:3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom:0.12rem solid white;
+    float:left;
+}
+
+tbody tr{
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+tr .id {
+    flex-grow: 0;
+    flex-basis: 4rem;
+}
+
+tr .nome {
+    text-align: left;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+tr .preferencia {
+    text-align: left;
+    flex-grow: 0;
+    flex-basis: 16rem;
+}
+
+tr .valor {
+    flex-grow: 0;
+    flex-basis: 8rem;
+}
+
+tr .preenche {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+tr .preenche_tam {
+    flex-grow: 0;
+    flex-basis: 3.4rem;
+}
+
+tr .botao {
+    flex-grow: 0;
+    flex-basis: 3rem;
+}
+
+tr .espaco {
+    flex-grow: 0;
+    flex-basis: 1rem;
+}
+
+tr .valor_g {
+    background: rgba(0, 0, 0, 0.6);
+    flex-grow: 0;
+    flex-basis: 10rem;
+}
+
+tr .rs {
+    background: rgba(0, 0, 0, 0.6);
+    flex-grow: 0;
+    flex-basis: 5rem;
+    text-align: right;
+}
+
+tbody::-webkit-scrollbar {
+    width: 0.5rem;
+}
+   
+tbody::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 81, 145);
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
+}
+
+
+
+
+/* SELECT */
+
+#table_select_sucos tbody tr{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#table_select_sucos tbody,
+#table_select_liquidos tbody,
+#table_select_preferencias tbody,
+#table_select_acrescimos tbody{
+    max-height: 62vh;
+}
+
+#table_select_sucos tbody{
+    height: 62vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* PEDIDO*/
+#table_view_pedido{
+    font-size: 0.7rem;
+}
+
+#table_view_pedido tbody{
+    background: rgba(0, 0, 0, 0.2);
+    height: 68vh;
+}
+
+#table_sub_total tr{
+    font-size: 2.2rem;
+    height: 4rem;
+    line-height: 3.8rem;
+}
+
+#money{
+    background-image: linear-gradient(to right, rgb(6, 37, 51), rgb(0, 18, 32));
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.1rem;
+    color:white;
+    text-align: center;
+}
+

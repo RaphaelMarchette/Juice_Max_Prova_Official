@@ -1,0 +1,614 @@
+.aba{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+    color: white;
+}
+
+
+.container_w {
+    display: flex;
+    flex-flow: row;
+    float:left;
+    width: 100vw;
+    height: 92vh;
+    padding: 0;
+    margin-top: 8vh;
+}
+
+.container_w .w_20vw {
+    border-right: 0.3vw solid rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    flex-grow: 0;
+    flex-basis:20vw;
+}
+
+.container_w .w_spc {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+
+.container_w .w_48vw {
+    border-right: 0.3vw solid rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    flex-grow: 0;
+    flex-basis:35vw;
+}
+
+.container_w .w_52vw {
+    flex-grow: 0;
+    flex-basis:52vw;
+}
+
+
+.w_41vw {
+    width: 41vw;
+    height: 92vh;
+    background-color: aqua;
+    position:absolute;
+    top:8vh;
+    left:35vw;
+}
+
+.container_w .w_24vw {
+    border-left: 0.3vw solid rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    flex-grow: 0;
+    flex-basis:24vw;
+    float:right;
+    margin-left: 41vw;
+}
+
+
+
+
+
+
+
+.container_h {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 92vh;
+    float:left;
+    padding: 0;
+}
+
+.container_h .h_2vh {
+    flex-grow: 0;
+    flex-basis:2vh;
+}
+
+.container_h .h_40vh {
+    flex-grow: 0;
+    flex-basis:40vh;
+    background-color: blue;
+}
+
+.container_h .h_auto {
+    flex-grow: 1;
+    flex-basis:auto;
+}
+
+
+.container_h .h_spc {
+    flex-grow: 1;
+    flex-basis:auto;
+}
+
+
+
+.container_h .h_80vh {
+    flex-grow: 0;
+    flex-basis:60vh;
+}
+
+
+
+
+
+.title_table{
+    width: 100%;
+}
+
+table{
+    border-radius: 1rem 1rem 0 0;
+    padding: 0.2rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+
+thead{
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+tbody{
+    display: inline-block;
+    width: 100%;   
+    overflow:auto;
+    max-height: 68vh;
+
+}
+
+tr {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 3rem;
+    line-height:3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom:0.12rem solid white;
+    float:left;
+}
+
+tbody tr{
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+tr .id {
+    flex-grow: 0;
+    flex-basis: 4rem;
+}
+
+tr .nome {
+    text-align: left;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+tr .preferencia {
+    text-align: left;
+    flex-grow: 0;
+    flex-basis: 16rem;
+}
+
+tr .valor {
+    flex-grow: 0;
+    flex-basis: 8rem;
+}
+
+tr .preenche {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+tr .preenche_tam {
+    flex-grow: 0;
+    flex-basis: 3.4rem;
+}
+
+tr .botao {
+    flex-grow: 0;
+    flex-basis: 3rem;
+}
+
+tr .espaco {
+    flex-grow: 0;
+    flex-basis: 1rem;
+}
+
+tr .valor_g {
+    background: rgba(0, 0, 0, 0.6);
+    flex-grow: 0;
+    flex-basis: 10rem;
+}
+
+tr .rs {
+    background: rgba(0, 0, 0, 0.6);
+    flex-grow: 0;
+    flex-basis: 5rem;
+    text-align: right;
+}
+
+tbody::-webkit-scrollbar {
+    width: 0.5rem;
+}
+   
+tbody::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 81, 145);
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
+}
+
+
+
+
+/* SELECT */
+
+#table_select_sucos tbody tr{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#table_select_sucos tbody,
+#table_select_liquidos tbody,
+#table_select_preferencias tbody,
+#table_select_acrescimos tbody{
+    max-height: 62vh;
+}
+
+#table_select_sucos tbody{
+    height: 62vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+#btn-primary, #btn-danger, #btn-pesquisar{
+    display:inline-block;
+    color:white;
+    background-color: dodgerblue;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2.4rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    position: relative;
+    top: 0.15em;
+}
+
+#btn-danger{
+    background-color: red;
+}
+
+#btn-pesquisar{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+}
+
+#btn-pesquisar:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+#btn-primary:hover,
+#btn-danger:hover{
+    background-color: rgba(5, 134, 209, 0.452);
+}
+
+
+
+#table_frutas{
+    width: 30vw;
+}
+
+
+#base{
+    width: 30vw;
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li{
+	list-style: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41vw;
+    height: 92vh;
+    flex-wrap: wrap;
+    z-index: 1;
+    overflow: auto;
+    position: absolute;
+    top:8vh;
+    right: 24vw;
+}
+
+.container .content{
+    padding: 1vh;
+    text-align: center;
+}
+
+.container .content h2{
+    position: absolute;
+    top: -3vh;
+    left: 1vh;
+    font-size: 12vh;
+    color: rgba(255,255,255,0.2);
+}
+
+.container .content h3{
+    width: 20vh;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    bottom:11vh;
+    left: 1.5vh;
+    font-size: 4vh;
+}
+
+.container .content h4{
+    width: 20vh;
+    color: #fff;
+    z-index: 1;
+    font-size: 4vh;
+    position: absolute;
+    bottom:7vh;
+    left: 1.5vh;
+}
+
+.container .content p{
+    width: 20vh;
+    font-size: 3vh;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    bottom:7vh;
+    left: 1.5vh;
+}
+
+.container .content a{
+    display:block;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 0vh 0vh 2vh 2vh;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 2vh;
+    width: 4vh;
+    height: 4vh;
+    line-height: 1vh;
+    text-align: center;
+    padding: 0vh 2vh 6vh 2vh;
+    position: absolute;
+    top:0vh;
+    right: 1.5vh;
+}
+
+
+input{
+    display:none;
+}
+label{
+    position: relative;
+    width: 23vh;
+    height: 36vh;
+    margin: 3vh;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+input:checked ~label{
+    background-color: blueviolet;
+}
+
+.card:hover{
+    background-color: blueviolet;
+}
+
+.card_add:hover{
+    background-color: rgba(6, 198, 6, 0.805);
+}
+
+img{
+    display: block;
+    width: 12vh;
+    height: 12vh;
+    position: absolute;
+    bottom:15vh;
+    left: 5.5vh;
+}
+
+.img_redonda{
+    display: block;
+    width: 16vh;
+    height: 16vh;
+    position: absolute;
+    bottom:12vh;
+    left: 3.5vh;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-radius: 8vh;
+}
+
+.container::-webkit-scrollbar {
+    width: 0.5vw;
+}
+   
+.container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 81, 145);
+    border-radius: 0.5vh;
+    border: 0.1vw solid black;
+}
+
+#add_card{
+    width: 10vh;
+    height: 10vh;
+    position: absolute;
+    top:-12vh;
+    right: 5vh;
+}
+
+#add_card:hover{
+    width: 12vh;
+    height: 12vh;
+    position: absolute;
+    top:-13vh;
+    right: 4vh;
+}
+
+
+#add_estoque{
+    width: 3vh;
+    height: 3vh;
+    position: absolute;
+    top:2vh;
+    right: 0.5vh;
+}
+
+#add_estoque:hover{
+    width: 3.5vh;
+    height: 3.5vh;
+    position: absolute;
+    top:1.75vh;
+    right: 0.25vh;
+}
+
+
+
+
+.sucesso, .erro{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.2rem solid dodgerblue;
+    border-radius: 1rem 0rem 1rem 0rem;
+    display: block;
+    max-width: 80vw;
+    padding: 0vw 1vw 0vw 1vw;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+    position: absolute;
+    top:0.8vh;
+    left:50%;
+    transform: translate(-50%,0);
+    opacity:0.8;
+    z-index: 10;
+}
+
+.sucesso{
+    background-color: darkgreen;
+    background-image: linear-gradient(to right, rgb(5, 162, 52),rgb(5, 180, 52),rgb(5, 162, 52));
+}
+
+.erro{
+    background-color: darkred;
+}
+
+#bt_fazer_pedido{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    display: block;
+    width: 20vw;
+    height: 8vh;
+    line-height: 8vh;
+    border: none;
+    color: white;
+    font-size: 4vh;
+    cursor: pointer;
+    border-radius: 1vh;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom:5vh;
+    right: 2vw;
+}
+
+#bt_fazer_pedido:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+
+
+.logado{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.4vh solid rgba(0, 0, 0, 0.6);
+    border-top: none;
+    border-radius: 0vh 0vh 2vh 2vh;
+    display: block;
+    width: 40vh;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top:0vh;
+    left:50vw;
+    transform: translate(-50%,0%);
+}
+
+
+
+.bt{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.4vh solid rgba(0, 0, 0, 0.6);
+    border-radius: 2vh;
+    display: block;
+    width: 12vh;
+    height: 6vh;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    text-decoration: none;
+}
+
+.bt_left{
+    position: absolute;
+    top:0.7vh;
+    left:1vw;
+}
+
+.bt_center{
+    position: absolute;
+    top:0.7vh;
+    left:50vw;
+    transform: translate(-50%,0%);
+}
+
+.bt_right{
+    position: absolute;
+    top:0.7vh;
+    right:1vw;
+}
+
+
+.bt:hover{
+    background-color: rgb(17, 81, 145);
+    cursor: pointer;
+}
+
+
+.position_transpor {
+    position: relative;
+    top:-100%
+}

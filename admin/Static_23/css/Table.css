@@ -1,0 +1,115 @@
+.title_table{
+    width: 100%;
+}
+
+table{
+    letter-spacing: 0.1rem;
+    font-size: 0.9vw;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+
+thead{
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    width: 100%;
+    border-radius: 2vh 2vh 0 0;
+}
+
+tbody{
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    overflow:auto;
+    max-height: 80vh;
+}
+
+tr {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 6vh;
+    line-height:6vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom:0.2vh solid white;
+    float:left;
+}
+
+tbody::-webkit-scrollbar {
+    width: 0.5vw;
+}
+   
+tbody::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 81, 145);
+    border-radius: 0.5vh;
+    border: 0.1vw solid black;
+}
+
+
+.table_col_cor {
+     background: rgba(0, 0, 0, 0.3); 
+}
+
+tr .table_col_2vw {
+    flex-grow: 0;
+    flex-basis: 2vw;
+}
+
+tr .table_col_4vw {
+    flex-grow: 0;
+    flex-basis: 5vw;
+}
+
+tr .table_col_6vw {
+    flex-grow: 0;
+    flex-basis: 7vw;
+}
+
+tr .table_col_10vw {
+    flex-grow: 0;
+    flex-basis: 10vw;
+}
+
+tr .table_col_12vw {
+    flex-grow: 0;
+    flex-basis: 12vw;
+}
+
+tr .table_col_14vw {
+    flex-grow: 0;
+    flex-basis: 14vw;
+}
+
+tr .table_col_18vw {
+    flex-grow: 0;
+    flex-basis: 18vw;
+}
+
+tr .table_col_22vw {
+    flex-grow: 0;
+    flex-basis: 22vw;
+}
+
+
+
+
+
+#table_resumo tr{
+    font-size: 1.4vw;
+    height: 7vh;
+    line-height: 7vh;
+}
+
+#admin_table_vendas tbody{
+    font-size: 0.7vw;
+}
+
+#admin_table_frutas{
+    max-width: 50vw;
+    font-size: 1.8vw;
+}

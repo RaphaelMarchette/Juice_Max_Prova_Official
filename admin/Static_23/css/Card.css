@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li{
+	list-style: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 79.8vw;
+    height: 92vh;
+    flex-wrap: wrap;
+    z-index: 1;
+    overflow: auto;
+    position: absolute;
+    top:8vh;
+    right: 0.2vw;
+}
+
+.container .content{
+    padding: 1vh;
+    text-align: center;
+}
+
+.container .content h2{
+    position: absolute;
+    top: -3vh;
+    left: 1vh;
+    font-size: 12vh;
+    color: rgba(255,255,255,0.2);
+}
+
+.container .content h3{
+    width: 20vh;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    bottom:11vh;
+    left: 1.5vh;
+    font-size: 4vh;
+}
+
+.container .content h4{
+    width: 20vh;
+    color: #fff;
+    z-index: 1;
+    font-size: 4vh;
+    position: absolute;
+    bottom:7vh;
+    left: 1.5vh;
+}
+
+.container .content p{
+    width: 20vh;
+    font-size: 3vh;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    bottom:7vh;
+    left: 1.5vh;
+}
+
+.container .content .estoque{
+    display:block;
+    margin-top:1vh;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 2vh;
+    width: 16vh;
+    height: 4vh;
+    line-height: 4vh;
+    text-align: left;
+    padding: 0vh 2vh 2vh 2vh;
+    position: absolute;
+    bottom:2vh;
+    left: 4vh;
+}
+
+
+input{
+    display:none;
+}
+label{
+    position: relative;
+    width: 23vh;
+    height: 36vh;
+    margin: 3vh;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+input:checked ~label{
+    background-color: blueviolet;
+}
+
+.card:hover{
+    background-color: blueviolet;
+}
+
+.card_add:hover{
+    background-color: rgba(6, 198, 6, 0.805);
+    color: #fff;
+}
+
+img{
+    display: block;
+    width: 12vh;
+    height: 12vh;
+    position: absolute;
+    bottom:15vh;
+    left: 5.5vh;
+}
+
+.img_redonda{
+    display: block;
+    width: 16vh;
+    height: 16vh;
+    position: absolute;
+    bottom:12vh;
+    left: 3.5vh;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-radius: 8vh;
+}
+
+.container::-webkit-scrollbar {
+    width: 0.5vw;
+}
+   
+.container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 81, 145);
+    border-radius: 0.5vh;
+    border: 0.1vw solid black;
+}
+
+#add_card{
+    width: 10vh;
+    height: 10vh;
+    position: absolute;
+    top:-12vh;
+    right: 5vh;
+}
+
+#add_card:hover{
+    width: 12vh;
+    height: 12vh;
+    position: absolute;
+    top:-13vh;
+    right: 4vh;
+}
+
+
+#add_estoque{
+    width: 3vh;
+    height: 3vh;
+    position: absolute;
+    top:0.5vh;
+    right: 0.5vh;
+}
+
+#add_estoque:hover{
+    width: 3.5vh;
+    height: 3.5vh;
+    position: absolute;
+    top:0.25vh;
+    right: 0.25vh;
+}

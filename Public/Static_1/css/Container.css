@@ -1,0 +1,148 @@
+.position_transpor {
+    position: relative;
+    top:-100%
+}
+
+
+.container_row {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 90vh;
+    float:left;
+    padding: 0;
+    margin-top: 10vh;
+}
+
+.container_row .spc {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.container_row .row_1 {
+    flex-grow: 0;
+    flex-basis: 30rem;
+}
+
+.container_row .row_2 {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0rem 1rem 0rem 1rem;
+    flex-grow: 0;
+    flex-basis: 35rem;
+}
+
+.container_row .row_3 {
+    flex-grow: 0;
+    flex-basis: 25rem;
+}
+
+.container_row .row_4 {
+    flex-grow: 0;
+    flex-basis: 30rem;
+}
+
+.container_row .row_5 {
+    flex-grow: 0;
+    flex-basis: 35rem;
+}
+
+.container_row .row_6_pagar {
+    flex-grow: 0;
+    flex-basis: 30rem;
+}
+
+.container_row .row_7_pagar {
+    flex-grow: 0;
+    flex-basis: 70rem;
+}
+
+
+
+
+
+.container_row .row_1_sem_cor {
+    backdrop-filter: url(filters.svg#filter) blur(2px) saturate(150%);
+    flex-grow: 0;
+    flex-basis: 30rem;
+}
+
+.container_row .row_2_sem_cor{
+    backdrop-filter: url(filters.svg#filter) blur(2px) saturate(150%);
+    padding: 0rem 1rem 0rem 1rem;
+    flex-grow: 0;
+    flex-basis: 35rem;
+}
+
+.container_row .spc_sem_cor {
+    backdrop-filter: url(filters.svg#filter) blur(2px) saturate(150%);
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+
+
+
+
+.container_col {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    float:left;
+}
+
+.container_col .spc_col {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.container_col .col_1rem {
+    flex-grow: 0;
+    flex-basis: 1rem;
+}
+
+.container_col .col_2rem {
+    flex-grow: 0;
+    flex-basis: 2rem;
+}
+
+.container_col .col_3rem {
+    flex-grow: 0;
+    flex-basis: 3rem;
+}
+
+.container_col .col_4rem {
+    flex-grow: 0;
+    flex-basis: 4rem;
+}
+
+.container_col .col_5rem {
+    flex-grow: 0;
+    flex-basis: 5rem;
+}
+
+.container_col .col_7rem {
+    flex-grow: 0;
+    flex-basis: 7rem;
+}
+
+.container_col .col_10rem {
+    flex-grow: 0;
+    flex-basis: 10rem;
+}
+
+.container_col .col_20rem {
+    flex-grow: 0;
+    flex-basis: 20vh;
+}
+
+.container_col .col_100vh {
+    flex-grow: 0;
+    flex-basis: 84vh;
+}
+
+.container_col .col_pagar_82vh {
+    border-radius: 1rem 1rem 0 0;
+    flex-grow: 0;
+    flex-basis:82vh;
+}
