@@ -1,1 +1,1 @@
-<?php $contagem=1 ?>
+<?php $contagem=4 ?>
